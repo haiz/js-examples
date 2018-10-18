@@ -18,11 +18,11 @@ function f1() {
     console.log("Hello ", y);
     return new Promise(function(resolve, reject) {
       console.log('Do nothing');
-      //resolve('ccccc');
       resolve(new Promise(function(resolve, reject) {
         resolve('dddd');
         reject('eeee');
       }));
+      resolve('ccccc');
       return 'bbbb';
     });
   })
@@ -41,3 +41,5 @@ function f1() {
 
   z.then is not a function
   */
+
+// URL: https://jsfiddle.net/haict/ovhb2ez7
