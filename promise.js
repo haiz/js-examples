@@ -28,9 +28,9 @@ function f1() {
   })
   .then(function(z) {
     console.log("Goodbye ", z);
-    z.then(function(a) {
-      console.log('Ciao ', a);
-    });  
+  })
+  .then(function(g) {
+    console.log('Ciao ', g);
   });
   
   /*
@@ -38,8 +38,7 @@ function f1() {
   > "Hello " "aaaa"
   > "Do nothing"
   > "Goodbye " "dddd"
-
-  z.then is not a function
+  > "Ciao"  undefined
   */
 
-// URL: https://jsfiddle.net/haict/ovhb2ez7
+// URL: https://jsfiddle.net/haict/ovhb2ez7/3/

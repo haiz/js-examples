@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "args": [
+        "--harmony"
+    ],
+
+    "tasks": [
+        {
+            "command": "node",
+            "label": "runFile",
+            "problemMatcher": "$jshint",
+            "args": ["${file}"]
+        }
+    ]
+}
